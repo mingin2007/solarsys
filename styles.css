@@ -10,7 +10,7 @@ body{
 }
 
 #header-div{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Advent Pro', sans-serif;
 	position: relative;
 	border: solid white 5px;
 	border-bottom: none;
@@ -23,25 +23,39 @@ body{
 	border-top-right-radius: 15px;
 }
 
-#menu-list{
+#header-div>p{
+	color: white;
+	font-weight: bold;
+	font-size: xx-large;
 	position: absolute;
-	width: 100%;
-	background-color: rgba(114, 53, 127, 0.3);
+	bottom: 10px;
+	left: 150px;
+	background-color: rgba(9, 9, 9, 0.3);
+	padding-left: 5px;
+}
+
+#menu-list{
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	width: 745px;
+	height: 35px;
+	background-color: rgba(114, 53, 127, 0.7);
 	color: white;
 	list-style-type: none;
 	top: 0px;
+	left: 150px;
 	padding: 8px 0px 8px 0px;
 	}
 li{
-	display: inline;
-	width: 125px;
-
+	float: left;
 }
 
 li a{
-	background-color: rgba(114, 53, 127, 0.2);
+
+	display: block-inline;
+	/*background-color: rgba(114, 53, 127, 0.2);*/
 	text-decoration: none;
-	padding: 8px 12px;
+	padding: 8px 10px;
 	font-weight: bold;
 	font-size: medium;
 }
@@ -50,9 +64,16 @@ li a:visited {
 	color: white;
 }
 
+.dropdown+*{
+	display:none;
+}
 
 li a:hover {
-    background-color: rgba(90, 48, 103, 0.6);
+    background-color: rgba(90, 48, 103, 0.8);
+}
+
+.dropdown:hover+*{
+		display: block;
 }
 
 a img {
@@ -68,10 +89,15 @@ a img {
 	margin: auto;
 }
 
+#drop-content>a{
+	display: block;
+
+}
+
 #left-menu{
 	width: 150px;
 	height: 400px;
-	background: rgba(255 ,255, 95, 0.7);
+	background: rgba(253 ,254, 175, 0.9);
 	position: absolute;
 	border-left: solid white 5px;
 }
