@@ -17,8 +17,8 @@ body{
 	background: url("img/banner.png") blue;
 	width: 900px;
 	height: 150px;
-	top: 160px;
-margin: auto;
+	top: 100px;
+	margin: auto;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
@@ -29,7 +29,7 @@ margin: auto;
 	background-color: rgba(114, 53, 127, 0.3);
 	color: white;
 	list-style-type: none;
-	bottom: 0px;
+	top: 0px;
 	padding: 8px 0px 8px 0px;
 	}
 li{
@@ -64,7 +64,7 @@ a img {
 #main-container{
 	position: relative;
 	width: 900px;
-	top: 160px;
+	top: 100px;
 	margin: auto;
 }
 
