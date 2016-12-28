@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",
           .sendGetRequest("/snippets/home.html", 
             function (request) {
               var name = request.responseText;
-
+              console.log("name " + name);
               document.querySelector("#left-menu")
                 .innerHTML = name;
             });
