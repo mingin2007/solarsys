@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",
     // Unobtrusive event binding
     document.querySelector("#left-menu")
       .addEventListener("click", function () {
-
+        console.log("request sent");
         // Call server to get the name
         $ajaxUtils
           .sendGetRequest("/snippets/home.html", 
