@@ -92,12 +92,41 @@ a img {
 #drop-content>a{
 	display: block;
 
+} 
+drop-content+a:hover{
+	display: block;
+
 }
 
 #left-menu{
 	width: 150px;
-	height: 400px;
+	height: 600px;
 	background: rgba(253 ,254, 175, 0.9);
 	position: absolute;
 	border-left: solid white 5px;
+}
+
+#right-menu{
+	width: 150px;
+	height: 600px;
+	background: rgba(253 ,254, 175, 0.9);
+	position: absolute;
+	border-right: solid white 5px;
+	right: 0px;
+	z-index: -1;
+}
+#right-menu img{
+	position: absolute;
+	top: 35px;
+}
+
+#center-pic{
+	position: absolute;
+	width: 600px;
+	left: 150px;
+	top: 35px;
+}
+#center-pic img{
+	width: 600px;
+	height: 350px;
 }
