@@ -15,8 +15,6 @@ document.addEventListener("DOMContentLoaded",
               document.querySelector("#left-menu")
                 .innerHTML = name;
             });
-
-        
       });
   }
 );

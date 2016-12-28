@@ -109,7 +109,7 @@ drop-content+a:hover{
 #right-menu{
 	width: 150px;
 	height: 600px;
-	background: rgba(253 ,254, 175, 0.9);
+	/*background: rgba(253 ,254, 175, 0.9);*/
 	position: absolute;
 	border-right: solid white 5px;
 	right: 0px;
