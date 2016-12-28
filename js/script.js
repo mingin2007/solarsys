@@ -3,19 +3,24 @@ document.addEventListener("DOMContentLoaded",
   function (event) {
     
     // Unobtrusive event binding
-    document.querySelector("#left-menu")
-      .addEventListener("click", function () {
+    var i=0;
+	var x = document.querySelectorAll(".content-loader");
+	while(x[i]){
+      x[i].addEventListener("click", function () {
         console.log("request sent");
+		console.log(this.id);
         // Call server to get the name
         $ajaxUtils
-          .sendGetRequest("/snippets/home.html", 
+          .sendGetRequest("/snippets/" + this.id + ".html", 
             function (request) {
-              var name = request.responseText;
-              console.log("name " + name);
-              document.querySelector("#left-menu")
-                .innerHTML = name;
+              var content = request.responseText;
+              console.log("content " + content);
+              document.querySelector("#main-content")
+                .innerHTML = content;
             });
       });
+		i++;
+	}
   }
 );
 

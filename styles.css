@@ -130,3 +130,11 @@ drop-content+a:hover{
 	width: 600px;
 	height: 350px;
 }
+
+#main-content{
+	position: absolute;
+	left: 150px;
+	top: 350px;
+	color: white;
+	
+}
