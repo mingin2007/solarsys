@@ -4,26 +4,37 @@ document.addEventListener("DOMContentLoaded",
     
     // Unobtrusive event binding
     
+	document.querySelector(".test").addEventListener("click", showModal);
+	
 	var i=0;
 	var x = document.querySelectorAll(".content-loader");
 	while(x[i]){
       x[i].addEventListener("click", function () {
-		document.querySelector("#main-content")
-                .innerHTML = "<img src='img/ajax-loader.gif' width='100' height='100'>";
-        // Call server to get the name
+		showModal();
+
+		// Call server to get the name
         $ajaxUtils
-          .sendGetRequest("/snippets/" + this.id + ".html", 
+          .sendGetRequest("./snippets/" + this.id + ".html", 
             function (request) {
               var content = request.responseText;
               console.log("content " + content);
               document.querySelector("#main-content")
                 .innerHTML = content;
+			hideModal();
             });
       });
 		i++;
 	}
   }
 );
+
+function showModal(){
+	document.querySelector(".modal").style.display = "block";
+}
+
+function hideModal(){
+	document.querySelector(".modal").style.display = "none";
+}
 
 
 

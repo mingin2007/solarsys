@@ -5,8 +5,33 @@
     /*font-family: 'Advent Pro', sans-serif;*/
 }
 
+a, a:visited {
+	text-decoration: none;
+	color: white;
+}
+
 body{
 	background: url("img/background.jpg");
+}
+
+.modal{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 2;
+}
+
+.modal img{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: calc(50% - 25px);
+	left: calc(50% -  25px);
 }
 
 #big-box{
@@ -24,8 +49,6 @@ body{
 	font-family: 'Advent Pro', sans-serif;
 	position: absolute;
 	float: left;
-	/*	border: solid white 5px;
-	border-bottom: none; */
 	background: url("img/banner.png") blue;
 	width: 100%;
 	height: 150px;
@@ -55,13 +78,14 @@ body{
 	list-style-type: none;
 	padding: 8px 0px 8px 0px;
 	top: 150px;
+	z-index: 1;
 }
 
-li{
+#menu-list li{
 	float: left;
 }
 
-li a{
+#menu-list li a{
 	display: block-inline;
 	text-decoration: none;
 	padding: 8px 10px;
@@ -69,19 +93,27 @@ li a{
 	font-size: medium;
 }
 
-li a:visited {
-	color: white;
+.dropdown{
+	display: none;
 }
 
-.dropdown+*{
-	display:none;
+#dropper{
+	display: inline;
 }
+
 
 li a:hover {
     background-color: rgba(90, 48, 103, 0.8);
 }
 
-.dropdown:hover+*{
+.dropdown:hover div{
+		position: relative;
+		top: 8px;
+		display: block;
+		background-color: rgba(18, 140, 140, 1.0);
+}
+
+.dropdown:hover div a{
 		display: block;
 }
 
@@ -91,21 +123,12 @@ li a img {
 	margin-bottom: -3px;
 }
 
-#drop-content>a{
-	display: block;
-	z-index: 1;
-} 
-
-drop-content+a:hover{
-	display: block;
-}
-
 #left-menu{
 	position: absolute;
 	border: solid 1px;
 	width: 150px;
 	height: 300px;
-	background: #E9A51E; /*rgba(253 ,254, 175, 0.9);*/
+	background: #E9A51E; 
 	top: 185px;
 	float: left;
 }
@@ -114,16 +137,12 @@ drop-content+a:hover{
 	position: absolute;
 	width: 260px;
 	height: 280px;
-	/*background: rgba(253 ,254, 175, 0.9);*/
 	background: #E9A51E;
 	right: 0px;
 	top: 185px;
 	border-top: solid 3px #E9A51E;
 	border-right: solid 3px #E9A51E;
 	border-radius: 10px;
-}
-#right-menu img:hover{
-	opacity:0.8;
 }
 
 #right-menu img{
@@ -134,7 +153,7 @@ drop-content+a:hover{
 	border-left: 0px;
 }
 
-#right-menu>div{
+#right-menu div{
 	position: relative;
 	height: 33.333%;
 	background:white;
@@ -147,7 +166,7 @@ drop-content+a:hover{
 	bottom: 0px;
 	color: white;
 	background: rgba(9, 9, 9, 0.7);
-	padding: 5px;
+	padding: 0px;
 	width: 257px;
 	font-family: 'Roboto', sans-serif;
 	font-size: large;
@@ -162,7 +181,8 @@ drop-content+a:hover{
 	left: 150px;
 	top: 185px;
 	background: #E9A51E;
-	float:left;
+
+
 }
 
 #center-pic img {
