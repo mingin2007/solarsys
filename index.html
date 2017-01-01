@@ -22,19 +22,44 @@
 
 	<ul id="menu-list">
 		<li><a href="#" id="home" class="content-loader">Αρχική</a></li>
-		<li><a href="#" id="sun" class="content-loader">Ο Ήλιος</a></li>
+		<li><a href="#" id="sun" class="content-loader">Ήλιος</a></li>
 		<li id="dropper" class="dropdown">
-			<a href="#">Οι πλανήτες <img src="img/menu-arrow.png"></img></a>
+			<a href="#" id="planets" class="content-loader">Πλανήτες <img src="img/menu-arrow.png"></img></a>
 			<div class="dropdown">
-				<a href="#">Ο Ερμής</a>
-				<a href="#">Η Αφροδίτη</a>
-				<a href="#">Η Γη</a>
-				<a href="#">Ο Άρης</a>
+				<a href="#" id="hermes" class="content-loader" class="drop-content">Ερμής</a>
+				<a href="#" id="aphrodite" class="content-loader">Αφροδίτη</a>
+				<a href="#" id="gaea" class="content-loader">Γη</a>
+				<a href="#" id="ares" class="content-loader">Άρης</a>
+				<a href="#" id="zeus" class="content-loader">Δίας</a>
+				<a href="#" id="cronus" class="content-loader">Κρόνος</a>
+				<a href="#" id="poseidon" class="content-loader">Ποσειδώνας</a>
+				<a href="#" id="uranos" class="content-loader">Ουρανός</a>
 			</div>
 		</li>
-		<li><a href="#" class="test">Οι δορυφόροι <img src="img/menu-arrow.png"></a></li>
-		<li><a href="#">Οι αστεροειδείς <img src="img/menu-arrow.png"></a></li>
-		<li><a href="#">Τα μετέωρα <img src="img/menu-arrow.png"></a></li>
+		<li id="dropper" class="dropdown">
+			<a href="#" id="moons" class="content-loader">Δορυφόροι <img src="img/menu-arrow.png"></a>
+				<div class="dropdown">
+					<a href="#" id="moon" class="content-loader">Σελήνη</a>
+					<a href="#" id="phobos" class="content-loader">Φόβος</a>
+					<a href="#" id="deimos" class="content-loader">Δείμος</a>
+					<a href="#" id="ganymedes" class="content-loader">Γανυμήδης</a>
+					<a href="#" id="europa" class="content-loader">Ευρώπη</a>
+					<a href="#" id="callisto" class="content-loader">Καλλιστώ</a>
+					<a href="#" id="coutsou" class="content-loader">Κουτσούμπας</a>
+					<a href="#" id="chacha" class="content-loader">Τσατσάρας</a>
+				</div>
+		</li>
+		<li><a href="#">Αστεροειδείς</a></li>
+		<li><a href="#">Μετέωρα</a></li>	
+		<li id="dropper" class="dropdown">
+			<a href="#">Άλλα σώματα <img src="img/menu-arrow.png"></a>
+				<div class="dropdown">
+					<a href="#" id="dwarf" class="content-loader">Πλανήτες νάνοι</a>
+					<a href="#" id="comets" class="content-loader">Κομήτες</a>
+					<a href="#" id="oort" class="content-loader">Νέφος του Όορτ</a>
+					<a href="#" id="kuiper" class="content-loader">Ζώνη του Κάιπερ</a>					
+				</div>
+		</li>
 	</ul>
 
 <div id="left-menu">
@@ -47,8 +72,8 @@ Left content
 
 <div id="right-menu">
 	<div>
-		<p class="r-menu-hover">Κομήτες</p>
-		<a href="#"><img class="r-menu-hover" src="img/halley.jpg"></img></a>
+		<p><a href="#" style="display: block;">Διαστημικές αποστολές</a></p>
+		<a href="#"><img class="r-menu-hover" src="img/missions.jpg"></img></a>
 	</div>
 	<div>
 		<p><a href="#" style="display: block;">Τηλεσκόπια</a></p>
@@ -56,7 +81,7 @@ Left content
 	</div>
 
 	<div>
-		<p class="r-menu-hover">Διαστημικός σταθμός</p>
+		<p><a href="#" style="display: block;">Διαστημικός σταθμός</a></p>
 		<a href="#"><img class="r-menu-hover" src="img/iss.jpg"></img></a>
 	</div>
 </div>

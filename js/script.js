@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded",
   function (event) {
     
     // Unobtrusive event binding
-    
-	document.querySelector(".test").addEventListener("click", showModal);
 	
 	var i=0;
 	var x = document.querySelectorAll(".content-loader");

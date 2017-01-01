@@ -107,6 +107,7 @@ li a:hover {
 }
 
 .dropdown:hover div{
+		width: 100%;
 		position: relative;
 		top: 8px;
 		display: block;
@@ -117,10 +118,14 @@ li a:hover {
 		display: block;
 }
 
+.drop-content{
+	font-size: small;
+}
+
 li a img {
 	width: 12px;
 	height: 12px;
-	margin-bottom: -3px;
+	margin-bottom: -2px;
 }
 
 #left-menu{
